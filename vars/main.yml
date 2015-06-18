@@ -1,0 +1,13 @@
+nolioagent_dir: /home/vagrant/nolioagent
+cara_baseurl: http://{{ noliohost }}:8080/nolio-app/
+cara_file: nolio_agent_linux_5_0_2_b78.sh
+nac_ip: 192.168.10.36
+nac_port: 6600
+cur_dir: "{{lookup('pipe','pwd')}}"
+
+cara_args: -Vsys.installationDir=(install dir) \
+  -Vnolio.execution.name=(Execution server name) \
+  -Vnolio.execution.port={{ nac_port }} \
+  -Vnolio.nimi.port={{ nac_port }} \
+  -Vnolio.check.connectivity=false \
+  -Vnolio.nimi.secured=false
