@@ -39,6 +39,5 @@
 
 - name: 'install nolio agent'
   shell: /home/vagrant/{{ cara_file }}  -q -dir {{ nolioagent_dir }} -varfile agent.response.varfile \
-
   when: not nolioagent.stat.exists
 
