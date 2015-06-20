@@ -2,6 +2,7 @@ Ansible Nolio agent
 =========
 
 Ansible role to install the CA RA Nolio agent (on linux).
+Insprired by: https://communities.ca.com/docs/DOC-231149229
 
 Requirements
 ------------
@@ -12,10 +13,14 @@ Role Variables
 --------------
 use {{ noliohost }} to set the DNS name of the Nolio instance.
 use {{ nac_ip }} to set the ip
-{{ nac_port }} defaults to 6600
 
+nolio_execution_name: nolio
+nolio_execution_port: 6600
+nolio_nimi_port: 6600
+nolio_nimi_secured: false
 cara_file: nolio_agent_linux_5_0_2_b78.sh
-# this is the Linux installer
+
+this is for the Linux installer
 
 Dependencies
 ------------
