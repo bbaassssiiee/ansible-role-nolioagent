@@ -13,6 +13,6 @@ cur_dir: "{{lookup('pipe','pwd')}}"
 cara_args: -Vsys.installationDir=(install dir) \
   -Vnolio.execution.name= {{ nolio_execution_name }} \
   -Vnolio.execution.port={{ nolio_execution_port }} \
-  -Vnolio.nimi.port={{ nolio_nimi_port} \
+  -Vnolio.nimi.port={{ nolio_nimi_port}} \
   -Vnolio.check.connectivity={{ nolio_check_connectivity }} \
   -Vnolio.nimi.secured={{ nolio_nimi_secured }}
