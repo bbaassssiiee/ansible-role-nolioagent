@@ -7,7 +7,8 @@ nolio_check_connectivity: false
 
 nolioagent_dir: /home/vagrant/nolioagent
 cara_baseurl: http://{{ noliohost }}:8080/nolio-app/
-cara_file: nolio_agent_linux_5_0_2_b78.sh
+cara_file: nolio_agent_linux_x64_5_5_1_b1312.sh
+#cara_file: nolio_agent_linux_5_0_2_b78.sh
 cur_dir: "{{lookup('pipe','pwd')}}"
 
 cara_args: -Vsys.installationDir=(install dir) \
